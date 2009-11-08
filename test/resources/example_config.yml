@@ -1,0 +1,11 @@
+counters:
+  front_page:
+    HomeController#index
+  payments_page:
+    PaymentsController#index
+
+paths:
+  test_path_1:
+    TestController#step_1
+    AnalyticsController#step_2
+    TestController#step_3

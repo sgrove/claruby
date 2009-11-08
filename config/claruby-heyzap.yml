@@ -1,0 +1,21 @@
+counters:
+  front_page:
+    HomeController#index
+  payments_page:
+    PaymentsController#index
+
+paths:
+  developers_1:
+    HomeController#index
+    DevelopersController#index
+    DevelopersController#new_inventory_item
+
+  developers_2:
+    HomeController#index
+    DevelopersController#index
+    DevelopersController#import_games
+
+  developers_3:
+    HomeController#index
+    DevelopersController#index
+    nowhere#nowhere

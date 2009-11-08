@@ -1,0 +1,40 @@
+counters:
+  front_page:
+    QuestionsController#index
+  view_question:
+    QuestionsController#show
+
+paths:
+  view_question:
+    QuestionsController#index
+    QuestionsController#show
+
+  create_question:
+    QuestionsController#index
+    QuestionsController#new
+
+  view_then_create_question:
+    QuestionsController#index
+    QuestionsController#show
+    QuestionsController#new
+
+  home_then_about:
+    QuestionsController#index
+    HomeController#about
+
+  home_then_login:
+    QuestionsController#index
+    SessionsController#new
+
+  improper_login:
+    SessionsController#new
+    SessionsController#new
+
+  home_then_signup:
+    QuestionsController#index
+    UsersController#new
+
+  home_view_signup:
+    QuestionsController#index
+    QuestionsController#show
+    UsersController#new

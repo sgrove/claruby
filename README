@@ -1,0 +1,11 @@
+A prototype for a rails log-analyzer. It turns the log into a DSL, similar to cucumber, which is parsed into requests objects that can then be manipulated with plain ruby.
+
+Check config/claruby.yml for example configurations. Configure your counters and paths, then run rake claruby:analyze, and open notes/claruby.html to see the statistics.
+
+Thre's still plenty to do. Off the top of my head:
+
+ #. Add tests. This should have been the first step, but I wasn't sure what kind of interface I wanted to start with. Will be the priority. Begginings are in there
+ #. Profile like a mother. Takes much, much, much too long to parse a log. Searching and path generation are acceptable though.
+ #. Add cucmber-like syntax for tracking paths and generating daily/hourly reports
+ #. Allow users to create their own commands that would be written via logger.info, or logger.debug
+
